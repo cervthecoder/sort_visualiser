@@ -18,14 +18,15 @@ for i in range(n-1):
     for j in range(0, n-i-1):
         iter_ = 0
         if j < (n-i-2):
-            canvas.after(500, del_)
+            canvas.after(50, del_)
+            canvas.update()
         for item in h:
             x_1 = iter_*20
             y_1 = 600
             x_2 = iter_*20 + 20
             y_2 = 600 - item
             arguments = [x_1,y_1,x_2,y_2]
-            canvas.after(500, rect, arguments)
+            canvas.after(50, rect, arguments)
             canvas.update()
             iter_+=1
         if h[j] > h[j+1]:
