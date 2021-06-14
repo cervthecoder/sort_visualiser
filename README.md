@@ -1,6 +1,6 @@
 # Sort visualiser
 Program, který vizualizuje průběh bubble-sort algoritmu v Tkinteru. Jednotlivé čísla jsou reprezentována výškou jednotlivých sloupců, kterých je celkem
-60.
+30.
 
 # Motivace k vypracování
 Jako programátory nás zajímalo, jak by se dal vizualizovat průběh bubble sort algoritmu, kdy při iteraci sadou čísel porovnávají vždy hodnoty páru.

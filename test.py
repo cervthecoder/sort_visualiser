@@ -12,7 +12,7 @@ def del_():
     canvas.delete("all")
 
 
-h = [random.randint(20, 600) for n in range(30)] # generates a random set of numbers for heights of rectangles
+h = [random.randint(20, 600) for n in range(60)] # generates a random set of numbers for heights of rectangles
 n = len(h)
 for i in range(n-1):
     for j in range(0, n-i-1):
@@ -21,9 +21,9 @@ for i in range(n-1):
             canvas.after(50, del_)
             canvas.update()
         for item in h:
-            x_1 = iter_*40
+            x_1 = iter_*20
             y_1 = 600
-            x_2 = iter_*40 + 40
+            x_2 = iter_*20 + 20
             y_2 = 600 - item
             arguments = [x_1,y_1,x_2,y_2]
             canvas.after(50, rect, arguments)
